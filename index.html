@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .container{
+  width:50%;
+  }
+  div{
+  <!-- background-color:red; -->
+  }
+  
+  
+  </style>
+  <script>
+  $(document).ready(function(){
+  $(".circle").fadeOut(3000,function(){
+  $(".circle1").fadeIn(function(){
+  $(".circle1").fadeOut(10000,function(){
+  $(".circle2").fadeIn(function(){
+  $(".circle2").fadeOut(20000,function(){
+  $(".circle3").fadeIn(function(){
+  $(".circle3").fadeOut(3000,function(){
+  $(".circle").fadeIn();
+  });
+  });
+  });
+  });
+  });
+  });});
+  
+  
+  
+   
+  });
+  
+  </script>
+  
+  
+
+  
+</head>
+
+<body>
+<div class="container" style="margin-top: 100px;">
+	<div class="row">
+		<div class="col-md-6" style="padding:0px">
+			<div  style="width:148px;height:148px;border:1px solid rgba(49, 112, 143, 0.85); background-color:rgba(49, 112, 143, 0.85);float: right;">
+				<div class="circle" style="width:37px;height:37px;border:1px solid #000;border-radius:50%;
+					background-color: white;margin: 33% 0 0 33%;">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 div2" style="padding:0px">
+			<div style="width:148px;height:148px;border:1px solid #00FF08;background-color:#00FF08;">
+				  <div class="circle1" style="width:37px;height:37px;border:1px solid #000;border-radius:50%;
+					background-color: white;margin: 33% 0 0 33%; display:none;">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6" style="padding:0px">
+			<div style="width:148px;height:148px;border:1px solid rgba(169, 68, 66, 0.87); background-color:rgba(169, 68, 66, 0.87);float: right;">
+				 <div class="circle3" style="width:37px;height:37px;border:1px solid #000;border-radius:50%;
+					background-color: white;margin: 33% 0 0 33%;display:none;">
+				</div> 
+			</div>
+		</div>
+		<div class="col-md-6" style="padding:0px">
+			<div style="width:148px;height:148px;border:1px solid rgba(0, 31, 255, 0.81);background-color: rgba(0, 31, 255, 0.81);">
+				 <div class="circle2" style="width:37px;height:37px;border:1px solid #000;border-radius:50%;
+					background-color: white;margin: 33% 0 0 33%;display:none;">
+				</div> 
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
